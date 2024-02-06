@@ -1,0 +1,8 @@
+C:\fsd9-csharp\Session1-exc\bin\Debug\Session1-exc.exe.config
+C:\fsd9-csharp\Session1-exc\bin\Debug\Session1-exc.exe
+C:\fsd9-csharp\Session1-exc\bin\Debug\Session1-exc.pdb
+C:\fsd9-csharp\Session1-exc\obj\Debug\Session1-exc.csproj.AssemblyReference.cache
+C:\fsd9-csharp\Session1-exc\obj\Debug\Session1-exc.csproj.SuggestedBindingRedirects.cache
+C:\fsd9-csharp\Session1-exc\obj\Debug\Session1-exc.csproj.CoreCompileInputs.cache
+C:\fsd9-csharp\Session1-exc\obj\Debug\Session1-exc.exe
+C:\fsd9-csharp\Session1-exc\obj\Debug\Session1-exc.pdb

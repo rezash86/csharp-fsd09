@@ -1,0 +1,8 @@
+C:\fsd9-csharp\Session1-examples\bin\Debug\Session1-examples.exe.config
+C:\fsd9-csharp\Session1-examples\bin\Debug\Session1-examples.exe
+C:\fsd9-csharp\Session1-examples\bin\Debug\Session1-examples.pdb
+C:\fsd9-csharp\Session1-examples\obj\Debug\Session1-examples.csproj.AssemblyReference.cache
+C:\fsd9-csharp\Session1-examples\obj\Debug\Session1-examples.csproj.SuggestedBindingRedirects.cache
+C:\fsd9-csharp\Session1-examples\obj\Debug\Session1-examples.csproj.CoreCompileInputs.cache
+C:\fsd9-csharp\Session1-examples\obj\Debug\Session1-examples.exe
+C:\fsd9-csharp\Session1-examples\obj\Debug\Session1-examples.pdb
