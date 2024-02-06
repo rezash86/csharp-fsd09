@@ -63,7 +63,7 @@ namespace Session1_exc
         public override string ToString()
         {
             //return base.ToString(); //like super
-            return String.Format("{0} is {1} y/o and lives in {3}", _name, Age, City);
+            return String.Format("{0} is {1} y/o and lives in {2}", _name, Age, City);
         }
 
     }

@@ -14,63 +14,100 @@ namespace Session1_exc
         const string DatafileName = @"..\..\people.txt";
         static void Main(string[] args)
         {
-            //load data from file
 
-            //create a switch
-            int choice = GetMenuChoices();
-            switch (choice)
+            if (LoadFromFile())
             {
-                case 1:
-                    //you need to ask user to enter information
-                    Console.WriteLine("Please enter your name");
-                    string name = Console.ReadLine();
-                    Console.WriteLine("Please enter your age");
-                    string ageStr = Console.ReadLine();
-                    int age;
-                    if (!int.TryParse(ageStr, out age))
+                while (true)
+                {
+                    int choice = GetMenuChoices();
+                    switch (choice)
                     {
-                        Console.WriteLine("Please enter a number for age");
-                        return;
-                    }
-                    Console.WriteLine("Please enter your city");
-                    string city = Console.ReadLine();
+                        case 1:
+                            //you need to ask user to enter information
+                            Console.WriteLine("Please enter your name");
+                            string name = Console.ReadLine();
+                            Console.WriteLine("Please enter your age");
+                            string ageStr = Console.ReadLine();
+                            int age;
+                            if (!int.TryParse(ageStr, out age))
+                            {
+                                Console.WriteLine("Please enter a number for age");
+                                return;
+                            }
+                            Console.WriteLine("Please enter your city");
+                            string city = Console.ReadLine();
 
-                    Person person = new Person(name, age, city);
-                    people.Add(person);
-                    Console.WriteLine("Person has been added");
-                    break;
-                case 2:
-                    ListAllThePeople();
-                    break;
-                case 3:
-                    //ask user to give a name
-                    Console.WriteLine("Please eneter a name");
-                    string searchName = Console.ReadLine();
-                    FindPersonByName(searchName);
-                    break;
-                case 4:
-                    Console.WriteLine("Please eneter a number for age");
-                    string searchAgeText = Console.ReadLine();
-                    int searchAge;
-                    if (!int.TryParse(searchAgeText, out searchAge))
-                    {
-                        Console.WriteLine("the age is not correct");
-                        return;
-                    }
+                            Person person = new Person(name, age, city);
+                            people.Add(person);
+                            Console.WriteLine("Person has been added");
+                            break;
+                        case 2:
+                            ListAllThePeople();
+                            break;
+                        case 3:
+                            //ask user to give a name
+                            Console.WriteLine("Please eneter a name");
+                            string searchName = Console.ReadLine();
+                            Console.WriteLine(FindPersonByName(searchName));
+                            break;
+                        case 4:
+                            Console.WriteLine("Please eneter a number for age");
+                            string searchAgeText = Console.ReadLine();
+                            int searchAge;
+                            if (!int.TryParse(searchAgeText, out searchAge))
+                            {
+                                Console.WriteLine("the age is not correct");
+                                return;
+                            }
 
-                    var listOfFound = FindPersonYoungerThan(searchAge);
-                    foreach(var p in listOfFound)
-                    {
-                        Console.WriteLine(p);
+                            var listOfFound = FindPersonYoungerThan(searchAge);
+                            foreach (var p in listOfFound)
+                            {
+                                Console.WriteLine(p);
+                            }
+                            break;
+                        case 0:
+                            SaveToFile();
+                            return;
+                        default:
+                            Console.WriteLine("Wrong number");
+                            break;
                     }
-                    break;
-                case 0:
-                    SaveToFile();
-                    break;
-                default:
-                    Console.WriteLine("Wrong number");
-                    break;
+                }
             }
+
+            Console.ReadKey();
+           
+            
+        }
+
+        private static bool LoadFromFile()
+        {
+            try
+            {
+                using (var sr = new StreamReader(DatafileName))
+                {
+                    string personLine;
+                    while ((personLine = sr.ReadLine()) != null)
+                    {
+                        string[] parameters = personLine.Split(';');
+                        int age;
+                        if (!int.TryParse(parameters[1], out age))
+                        {
+                            Console.WriteLine("a problem");
+                            return false;
+                        }
+                        people.Add(new Person(parameters[0], age, parameters[2]));
+                    }
+                }
+            }catch(IOException exc)
+            {
+                Console.WriteLine(exc.Message);
+                return false;
+
+            }
+           
+           return true;
         }
 
         private static void SaveToFile()
@@ -102,7 +139,7 @@ namespace Session1_exc
         {
             foreach (Person person in people)
             {
-                if (person.Name.Contains(searchName))
+                if (person.Name.ToLower().Contains(searchName.ToLower()))
                 {
                     //https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated
                     return $"the person found is {person.Name}"; //using $
