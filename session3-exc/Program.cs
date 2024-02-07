@@ -105,8 +105,11 @@ namespace session3_exc
             List<Student> teenAgerStudents = studentArray.Where(std => std.Age > 12 && std.Age < 20).ToList() ;
 
             // Use LINQ to find first student whose name is Bill
-            Student bill = studentArray.Where(std => std.StudentName.Equals("Bill")).FirstOrDefault() ; 
-            
+            Student bill = studentArray.Where(std => std.StudentName.Equals("Bill")).FirstOrDefault() ;
+
+            List<Student> sortedStudents = studentArray.Where(std => std.Age > 12)
+                .OrderBy(std => std.StudentName).ToList() ;
+
         }
 
         private static void PrintHappy(int age, string name)
