@@ -1,0 +1,32 @@
+﻿<Window x:Class="session3_wpf.Basic"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:session3_wpf"
+        mc:Ignorable="d"
+        Title="Basic" Height="350" Width="600">
+    <StackPanel>
+        <DockPanel>
+            <Label>Enter your name</Label>
+            <TextBox Name="TxtName" Text="" Width="150" Height="50"></TextBox>
+        </DockPanel>
+        <Label>What is your age?</Label>
+        <StackPanel Margin="10">
+            <RadioButton  GroupName="age" Name="rbtnBelow18" Content="Below 18"></RadioButton>
+            <RadioButton  GroupName="age" Name="rbtnOver18" Content="Over 18"></RadioButton>
+        </StackPanel>
+        <Label>Where is your country?</Label>
+        <ComboBox Name="cmbContinents">
+            <ComboBoxItem>Asia</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">America</ComboBoxItem>
+            <ComboBoxItem>Africa</ComboBoxItem>
+            <ComboBoxItem>Europe</ComboBoxItem>
+            <ComboBoxItem>Australia</ComboBoxItem>
+
+        </ComboBox>
+
+        <Button Name="Btn_Submit" Margin="10" Width="120" HorizontalAlignment="Left" Background="Chartreuse" Height="50" Click="Btn_Submit_Click">Submit information</Button>
+
+    </StackPanel>
+</Window>

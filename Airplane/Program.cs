@@ -89,6 +89,7 @@ Enter your choices, comma-separated, empty for none: ");
             {
                 Airport.LogFailSet += LogToConsole;
                 Airport.LogFailSet += LogToFile;
+     
 
                 Console.WriteLine("Logging to console enabled");
                 Console.WriteLine("Logging to File enabled");
@@ -115,6 +116,7 @@ Enter your choices, comma-separated, empty for none: ");
             }
 
         }
+
 
         static void StdDeviation()
         {
