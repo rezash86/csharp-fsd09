@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IcecreamSelector", "..\Icec
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoepleView", "..\PoepleView\PoepleView.csproj", "{F66FAC19-A805-4815-86DC-F33D5CB2EED0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoForm", "..\TodoForm\TodoForm.csproj", "{F920A385-B38E-4239-9942-6F8BC79A035E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F66FAC19-A805-4815-86DC-F33D5CB2EED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F66FAC19-A805-4815-86DC-F33D5CB2EED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F66FAC19-A805-4815-86DC-F33D5CB2EED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F920A385-B38E-4239-9942-6F8BC79A035E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F920A385-B38E-4239-9942-6F8BC79A035E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F920A385-B38E-4239-9942-6F8BC79A035E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F920A385-B38E-4239-9942-6F8BC79A035E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
