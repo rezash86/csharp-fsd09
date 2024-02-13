@@ -1,0 +1,16 @@
+C:\fsd9-csharp\TodoForm\bin\Debug\TodoForm.exe.config
+C:\fsd9-csharp\TodoForm\bin\Debug\TodoForm.exe
+C:\fsd9-csharp\TodoForm\bin\Debug\TodoForm.pdb
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.csproj.AssemblyReference.cache
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.csproj.SuggestedBindingRedirects.cache
+C:\fsd9-csharp\TodoForm\obj\Debug\MainWindow.g.cs
+C:\fsd9-csharp\TodoForm\obj\Debug\App.g.cs
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm_MarkupCompile.cache
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm_MarkupCompile.lref
+C:\fsd9-csharp\TodoForm\obj\Debug\MainWindow.baml
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.g.resources
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.Properties.Resources.resources
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.csproj.GenerateResource.cache
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.csproj.CoreCompileInputs.cache
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.exe
+C:\fsd9-csharp\TodoForm\obj\Debug\TodoForm.pdb

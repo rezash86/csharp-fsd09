@@ -1,0 +1,40 @@
+﻿<Window x:Class="TodoForm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TodoForm"
+        mc:Ignorable="d"
+        Title="Todo" Height="450" Width="750" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid Margin="5,5,5,5">
+        <ListView Name="lvList" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" 
+                  VerticalAlignment="Top" Width="400" SelectionChanged="lvList_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Task" DisplayMemberBinding="{Binding TaskName}"></GridViewColumn>
+                    <GridViewColumn Header="Due Date" DisplayMemberBinding="{Binding DueDate}"></GridViewColumn>
+                    <GridViewColumn Header="Difficulty" DisplayMemberBinding="{Binding Difficulty}"></GridViewColumn>
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Status}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Task" HorizontalAlignment="Left" Margin="450,10, 0,0" VerticalAlignment="Top"></Label>
+        <Label Content="Difficulty" HorizontalAlignment="Left" Margin="450,70, 0,0" VerticalAlignment="Top"></Label>
+        <Label Content="Due Date" HorizontalAlignment="Left" Margin="450,130, 0,0" VerticalAlignment="Top"></Label>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="450,200, 0,0" VerticalAlignment="Top"></Label>
+        <TextBox Name="txtTask" HorizontalAlignment="Left" Margin="550,10, 0,0" Width="130" Height="25" VerticalAlignment="Top"></TextBox>
+        <!--https://wpf-tutorial.com/misc-controls/the-slider-control/-->
+        <Slider Name="slDifficulty" HorizontalAlignment="Left" Margin="550,70, 0,0" Width="130" Height="25" VerticalAlignment="Top" SmallChange="1" Maximum="5" Minimum="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" TickFrequency="1"></Slider>
+        <DatePicker Name="dpDueDate" HorizontalAlignment="Left" Margin="550,130, 0,0" VerticalAlignment="Top" Width="130" Height="25"></DatePicker>
+        <ComboBox Name="combStatus" HorizontalAlignment="Left" Margin="550,200, 0,0" VerticalAlignment="Top"  Width="130" Height="25">
+            <ComboBoxItem>Done</ComboBoxItem>
+            <ComboBoxItem>Pending</ComboBoxItem>
+            <ComboBoxItem>Delegated</ComboBoxItem>
+        </ComboBox>
+        <Button Name="btnExportToFile" Content="Export all to file..." HorizontalAlignment="Left"  Width="130" Height="25" Margin="100,350,0,0" Click="btnExportToFile_Click"></Button>
+        <Button Name="btnAdd" Content="Add" HorizontalAlignment="Left"  Width="130" Height="25" Margin="250,350,0,0" Click="btnAdd_Click"></Button>
+        <Button Name="btnUpdate" IsEnabled="False" Content="Update" HorizontalAlignment="Left"  Width="130" Height="25" Margin="400,350,0,0" Click="btnUpdate_Click"></Button>
+        <Button Name="btnDelete" IsEnabled="False" Content="Delete" HorizontalAlignment="Left"  Width="130" Height="25" Margin="550,350,0,0" Click="btnDelete_Click"></Button>
+
+    </Grid>
+</Window>
