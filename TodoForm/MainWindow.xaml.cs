@@ -159,7 +159,8 @@ namespace TodoForm
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
             saveFileDialog.Title = "Save the todos in a file";
-            if(saveFileDialog.ShowDialog() == true)
+
+            if (saveFileDialog.ShowDialog() == true)
             {
                 string allData = "";
                 foreach(Todo todo in todoList)

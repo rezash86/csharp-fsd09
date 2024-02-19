@@ -1,0 +1,18 @@
+﻿<Window x:Class="TwoDialog.HelloDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TwoDialog"
+        mc:Ignorable="d"
+        Title="HelloDialog" Height="500" Width="500">
+    <Grid>
+        <Label Name="lblMessage"  HorizontalAlignment="Left" VerticalAlignment="Top" Content="Message" Margin="10,30,0,0" Width="392"/>
+        <Label Name="lblAge" Content="What is your age?" Height="50" VerticalAlignment="Top" Margin="10,111,354,323"/>
+        <Label x:Name="lblCity" Content="Where do you live?" Height="50" VerticalAlignment="Top" Margin="10,192,354,142"/>
+        <TextBox Name="txtBoxAge" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Margin="165,120,0,0" Height="41"/>
+        <TextBox x:Name="txtBoxCity" HorizontalAlignment="Left" VerticalAlignment="Top" Width="225" Margin="165,192,0,0" Height="37"/>
+        <Button Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="250,303,0,0" Click="btnCancel_Click"></Button>
+        <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Margin="97,303,0,0" Click="btnOk_Click"/>
+    </Grid>
+</Window>

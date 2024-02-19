@@ -1,0 +1,16 @@
+﻿<Window x:Class="TwoDialog.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TwoDialog"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400">
+    <Grid>
+        <Label Content="Enter Your name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Margin="59,51,0,283" ></Label>
+        <TextBox Name="txtName" HorizontalAlignment="Left" Text="" Width="120" VerticalAlignment="Top" Height="32" Margin="173,56,0,0"></TextBox>
+        <Button Content="Say Hello" HorizontalAlignment="Left" Width="123" VerticalAlignment="Top" Margin="170,118,0,216" Click="Button_Click"/>
+
+        <Label Content="..." Name="lblResult" HorizontalAlignment="Left" Height="50" Margin="138,228,0,106"></Label>
+    </Grid>
+</Window>
