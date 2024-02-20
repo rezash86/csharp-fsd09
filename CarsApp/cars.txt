@@ -1,0 +1,4 @@
+Acura;6.1;Gasoline
+Porche;13.6;Electric
+Tesla;5.2;Electric
+Honda;7.3;Gasoline
