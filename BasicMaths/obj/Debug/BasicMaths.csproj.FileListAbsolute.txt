@@ -1,0 +1,8 @@
+C:\fsd9-csharp\BasicMaths\bin\Debug\BasicMaths.exe.config
+C:\fsd9-csharp\BasicMaths\bin\Debug\BasicMaths.exe
+C:\fsd9-csharp\BasicMaths\bin\Debug\BasicMaths.pdb
+C:\fsd9-csharp\BasicMaths\obj\Debug\BasicMaths.csproj.AssemblyReference.cache
+C:\fsd9-csharp\BasicMaths\obj\Debug\BasicMaths.csproj.SuggestedBindingRedirects.cache
+C:\fsd9-csharp\BasicMaths\obj\Debug\BasicMaths.csproj.CoreCompileInputs.cache
+C:\fsd9-csharp\BasicMaths\obj\Debug\BasicMaths.exe
+C:\fsd9-csharp\BasicMaths\obj\Debug\BasicMaths.pdb
